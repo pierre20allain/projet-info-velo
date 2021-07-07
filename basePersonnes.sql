@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS personnes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nom TEXT NOT NULL,
+    prenom TEXT NOT NULL,
+    age INTEGER NOT NULL,
+    pma INTEGER NOT NULL,
+    lthr INTEGER NOT NULL,
+    ftp INTEGER NOT NULL,
+    duree INTEGER NOT NULL,
+    username TEXT NOT NULL,
+    mdp TEXT NOT NULL,
+    jour INTEGER NOT NULL
+
+);

@@ -1,0 +1,46 @@
+{% extends 'base1.html' %}
+
+{% block content %}
+<h1>{% block title %} Ajouter un entraînement {% endblock %}</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="label">Label</label>
+        <input type="text" name="label"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['label'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="seance">Séance</label>
+        <input type="text" name="seance"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['seance'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="duree">Durée</label>
+        <input type="text" name="duree"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['duree'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="repetitions">Répétitions</label>
+        <input type="text" name="repetitions"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['repetitions'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="intensite">Intensité</label>
+        <input type="text" name="intensite"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['lthr'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <button type="login_training" class="btn btn-primary">Ajouter un entraînement</button>
+    </div>
+</form>
+{% endblock %}

@@ -1,1 +1,3 @@
-# projet-info-velo
+Le sujet a pour but de créer une appli web, ou éventuellement une autre interface, à destination d’un coach ou d’une athlète qui souhaiterait être autonome dans son entraînement.  
+L’athlète ou le coach cherche à obtenir de l’appli un plan d’entraînement prêt à l’emploi : un calendrier établi sur une durée indiquée par l’athlète qui lui indiquera chaque jour quelle séance d’entraînement réaliser.  
+L’algorithme choisira la bonne séance à faire en fonction de règles : choix des intensités d’entraînement selon la phase hormonale, choix de la durée (volume) d’entraînement selon le temps disponible, progression d’une séance sur l’autre en calculant la charge d’entraînement, respect des jours de repos et semaines de récupération.

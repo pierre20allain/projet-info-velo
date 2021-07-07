@@ -1,0 +1,81 @@
+{% extends 'base1.html' %}
+
+{% block content %}
+<h1>{% block title %} S'inscrire {% endblock %}</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" name="nom"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['nom'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['prenom'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="username">Nom d'utilisateur</label>
+        <input type="text" name="username"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['username'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="mdp">Mot de passe</label>
+        <input type="text" name="mdp"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['mdp'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input type="text" name="age"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['age'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="pma">Pussiance Maximale Anaérobie (Watts)</label>
+        <input type="text" name="pma"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['pma'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="lthr">Fréquence cardiaque au seuil</label>
+        <input type="text" name="lthr"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['lthr'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="ftp">Puissance maximale moyenne</label>
+        <input type="text" name="ftp"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['ftp'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="jour">Premier jour des règles</label>
+        <input type="text" name="jour"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['jour'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <label for="duree">Durée du cycle menstruel (jours)</label>
+        <input type="text" name="duree"
+               placeholder="Post title" class="form-control"
+               value="{{ request.form['duree'] }}"></input>
+    </div>
+
+    <div class="form-group">
+        <button type="login" class="btn btn-primary">S'inscrire</button>
+    </div>
+</form>
+{% endblock %}
